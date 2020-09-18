@@ -20,10 +20,7 @@ function TodoList() {
         }
         setTodos(prev => prev.map(item =>(icon.id === todoId ? newValue : item)))
     }
-    const removeTodo = id => {
-        const removeArr = [...todo].filter(todo => todo.id !== id),
-        setTodos (removeArr)
-    }
+    
     
 
     const completeTodo = id => {
